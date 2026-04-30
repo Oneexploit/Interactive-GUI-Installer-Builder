@@ -86,6 +86,7 @@ Clone the repository and make the script executable:
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 cd YOUR_REPOSITORY
+sed -i 's/\r$//' interactive_gui_installer_builder.sh
 chmod +x interactive_gui_installer_builder.sh
 ```
 
