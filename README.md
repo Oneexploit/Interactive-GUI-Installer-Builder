@@ -1,6 +1,6 @@
 # Interactive GUI Installer Builder
 
-![Interactive GUI Installer Builder](assets/interactive-installer-builder.png)
+![Interactive GUI Installer Builder](interactive-installer-builder.png)
 
 **Interactive GUI Installer Builder** is a Bash-based packaging helper that creates desktop-friendly installers for Linux and macOS from an existing published application build.
 
