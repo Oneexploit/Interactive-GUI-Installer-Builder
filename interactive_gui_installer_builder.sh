@@ -152,15 +152,15 @@ print_header() {
 
 print_header
 
-DEFAULT_APP_NAME="VertexPro"
+DEFAULT_APP_NAME="One-Exploit"
 APP_SLUG_DEFAULT="$(make_slug "$DEFAULT_APP_NAME")"
 
-APP_DISPLAY_NAME="$(ask_required "Application display name" "VertexPro Trading Platform")"
+APP_DISPLAY_NAME="$(ask_required "Application display name" "One-Exploit Trading Platform")"
 APP_SLUG="$(ask_required "Application slug / file prefix (no spaces)" "$APP_SLUG_DEFAULT")"
 APP_SLUG="$(make_slug "$APP_SLUG")"
 [ -n "$APP_SLUG" ] || error "Application slug cannot be empty."
 
-BINARY_NAME="$(ask_required "Main binary/executable name inside publish folder" "VertexPro")"
+BINARY_NAME="$(ask_required "Main binary/executable name inside publish folder" "One-Exploit")"
 VERSION="$(ask_required "Version" "2.0.5")"
 
 ARG_TARGET="${1:-auto}"
@@ -207,7 +207,7 @@ OUTPUT_DIR_INPUT="$(ask_required "Where should generated setup files be saved?" 
 OUTPUT_DIR="$(abs_path "$OUTPUT_DIR_INPUT")"
 mkdir -p "$OUTPUT_DIR"
 
-COMMON_ICON_INPUT="$(ask "Icon/image path for the app (PNG for Linux, ICNS/PNG for macOS; leave empty to skip)" "UNFXCO.UI/Assets/VertexPro.png")"
+COMMON_ICON_INPUT="$(ask "Icon/image path for the app (PNG for Linux, ICNS/PNG for macOS; leave empty to skip)" "UNFXCO.UI/Assets/One-Exploit.png")"
 ICON_PATH="$(abs_path "$COMMON_ICON_INPUT")"
 if [ -n "$COMMON_ICON_INPUT" ] && [ ! -f "$ICON_PATH" ]; then
     warn "Icon was not found: $ICON_PATH"
