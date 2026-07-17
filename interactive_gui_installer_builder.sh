@@ -227,7 +227,7 @@ fi
 
 APP_COMMENT="$(ask "App comment/description" "Professional Trading Platform for Financial Markets")"
 GENERIC_NAME="$(ask "Generic name" "Trading Platform")"
-WEBSITE="$(ask "Website shown in README (optional)" "https://hybridsolutions.com")"
+WEBSITE="$(ask "Website shown in README (optional)" "https://oneexploit.com")"
 
 if [ "$BUILD_LINUX" = true ]; then
     DEFAULT_LINUX_BUILD_DIR="Build/Release/$VERSION/linux-x64"
@@ -242,7 +242,7 @@ if [ "$BUILD_MACOS" = true ]; then
     DEFAULT_MACOS_BUILD_DIR="Build/Release/$VERSION/macos-x64"
     MACOS_BUILD_DIR="$(abs_path "$(ask_required "macOS publish/build folder" "$DEFAULT_MACOS_BUILD_DIR")")"
     APP_BUNDLE_NAME="$(ask_required "macOS .app bundle name" "$APP_SLUG.app")"
-    MACOS_BUNDLE_ID_DEFAULT="com.hybridsolutions.$(lowercase "$APP_SLUG")"
+    MACOS_BUNDLE_ID_DEFAULT="com.oneexploit.$(lowercase "$APP_SLUG")"
     MACOS_BUNDLE_ID="$(ask_required "macOS bundle/package identifier" "$MACOS_BUNDLE_ID_DEFAULT")"
     MACOS_DMG_SIZE="$(ask_required "macOS DMG size" "500m")"
     MACOS_SIGN_IDENTITY="$(ask "macOS Developer ID signing identity (optional; leave empty to skip)" "")"
